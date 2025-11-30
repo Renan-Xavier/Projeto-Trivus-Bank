@@ -1,0 +1,250 @@
+/* Arquivo CSS do Trivus Bank */
+
+/* Vídeo de Background */
+.video-section {
+    border-radius: 0 0 50px 50px;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+/* Cores Personalizadas */
+.text-success {
+    color: #00563F !important;
+}
+
+.btn-success {
+    background-color: #00563F !important;
+    border-color: #00563F !important;
+}
+
+.btn-success:hover {
+    background-color: #003d2d !important;
+    border-color: #003d2d !important;
+}
+
+.btn-outline-success {
+    color: #00563F !important;
+    border-color: #00563F !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #00563F !important;
+    border-color: #00563F !important;
+    color: white !important;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+}
+
+.nav-link {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #00563F !important;
+}
+
+/* Textos em preto no modo claro */
+.text-secondary {
+    color: #000 !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 12px;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    transform: translateY(-15px);
+    display: block !important;
+    pointer-events: none;
+}
+
+/* Mostrar dropdown ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-item {
+    border-radius: 12px;
+    margin-bottom: 4px;
+}
+
+.dropdown-item:hover {
+    background-color: #e6f4f1;
+    color: #00563F;
+}
+
+/* Animação do Dropdown (não usada, mas mantida) */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+    border-radius: 24px !important;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Emojis arredondados */
+.card .fs-1 {
+    background-color: #e6f4f1;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.dark-mode .card .fs-1 {
+    background-color: #1a3d33;
+}
+
+/* Botões */
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 50px !important;
+    padding: 10px 24px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    border-radius: 50px !important;
+    padding: 14px 32px;
+}
+
+/* Dark Mode - Simples */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #2d2d2d !important;
+}
+
+.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .card {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.dark-mode .bg-light {
+    background-color: #1a1a1a !important;
+}
+
+.dark-mode .text-secondary {
+    color: #b0b0b0 !important;
+}
+
+.dark-mode .text-dark {
+    color: #ffffff !important;
+}
+
+.dark-mode .text-secondary {
+    color: #ffffff !important;
+}
+
+/* Logo verde escuro no dark mode */
+.dark-mode .video-background {
+    opacity: 0.2;
+}
+
+.dark-mode img[alt="Logo Trivus Bank"] {
+    filter: brightness(0.7) hue-rotate(-10deg);
+}
+
+/* Ícone sanduíche verde claro no dark mode */
+.dark-mode .navbar-toggler-icon {
+    filter: invert(1) brightness(1.2) sepia(1) hue-rotate(70deg) saturate(5);
+}
+
+.dark-mode footer {
+    background-color: #0d0d0d !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    /* Border radius no menu mobile colapsado */
+    .navbar-collapse {
+        border-radius: 0 0 30px 30px;
+        margin-top: 10px;
+        padding: 15px;
+        background-color: #f8f9fa;
+    }
+    
+    .dark-mode .navbar-collapse {
+        background-color: #2d2d2d;
+    }
+    
+    /* Border radius nos cantos da navbar mobile */
+    .navbar {
+        border-radius: 0 0 30px 30px;
+        overflow: hidden;
+    }
+    
+    /* Transformar dropdowns em links simples no mobile */
+    .dropdown-toggle::after {
+        display: none;
+    }
+    
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        display: block !important;
+        pointer-events: auto !important;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+        margin-left: 20px;
+    }
+    
+    .dropdown-item {
+        padding: 8px 0;
+    }
+}
