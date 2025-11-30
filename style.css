@@ -141,6 +141,11 @@ p {
     }
 }
 
+/* Logo mais escura no modo claro */
+img[alt="Logo Trivus Bank"] {
+    filter: brightness(0.6) saturate(1.3);
+}
+
 /* Cards */
 .card {
     transition: transform 0.3s ease;
@@ -194,7 +199,11 @@ p {
 }
 
 .dark-mode .nav-link {
-    color: #e0e0e0 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .navbar-brand {
+    color: #ffffff !important;
 }
 
 .dark-mode .card {
@@ -204,6 +213,19 @@ p {
 
 .dark-mode .bg-light {
     background-color: #1a1a1a !important;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #2d2d2d;
+}
+
+.dark-mode .dropdown-item {
+    color: #ffffff !important;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #1a3d33;
+    color: #00cf87 !important;
 }
 
 .dark-mode .text-secondary {
@@ -224,7 +246,7 @@ p {
 }
 
 .dark-mode img[alt="Logo Trivus Bank"] {
-    filter: brightness(0.7) hue-rotate(-10deg);
+    filter: brightness(1.2);
 }
 
 /* Ícone sanduíche verde claro no dark mode */
@@ -237,7 +259,7 @@ p {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .display-4 {
         font-size: 2rem;
     }
