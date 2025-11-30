@@ -32,8 +32,8 @@ projeto/
     │   ├── logo-trivus.svg
     │   └── (outras imagens do carousel)
     ├── videos/
-    │   └── video triagulos bg.mp4
-    └── pages/
+        └── video triagulos bg.mp4
+    
 ```
 
 ## O que tem no site
