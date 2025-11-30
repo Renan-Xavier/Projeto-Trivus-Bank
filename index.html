@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivus Bank - Banco Digital</title>
+    
+    <!-- Bootstrap CSS: Framework que traz estilos prontos (botões, navbar, grid, etc) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Meu CSS: Arquivo com estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold text-success fs-4" href="#">
+                <img src="Assets/Images/logo-trivus.svg" alt="Logo Trivus" width="40" height="40" class="me-2">
+                Trivus Bank
+            </a>
+            
+            <!-- Botão para Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu Principal -->
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <!-- Dropdown Produtos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Conta Digital</a></li>
+                            <li><a class="dropdown-item" href="#">Cartão</a></li>
+                            <li><a class="dropdown-item" href="#">Empréstimos</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Dropdown Serviços -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Serviços
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pix</a></li>
+                            <li><a class="dropdown-item" href="#">Transferências</a></li>
+                            <li><a class="dropdown-item" href="#">Pagamentos</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Link simples -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+                
+                <!-- Botões de Ação -->
+                <div class="d-flex gap-2 align-items-center">
+                    <!-- Botão Dark Mode -->
+                    <button id="btnDark" class="btn btn-outline-secondary">🌙</button>
+                    <a href="#" class="btn btn-outline-success">Entrar</a>
+                    <a href="#" class="btn btn-success">Abrir Conta</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Principal -->
+    <section class="py-5 bg-light position-relative video-section">
+        <!-- Vídeo de Background -->
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="Assets/video/video triagulos bg.mp4" type="video/mp4">
+        </video>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <!-- Texto -->
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold text-success mb-3">
+                        Bem-vindo ao Trivus Bank
+                    </h1>
+                    <p class="lead text-secondary mb-3 fw-bold">
+                        As três virtudes em sua mão.
+                    </p>
+                    <div class="d-flex gap-4 mb-4">
+                        <span class="fw-semibold text-dark">Segurança</span>
+                        <span class="text-success">•</span>
+                        <span class="fw-semibold text-dark">Simplicidade</span>
+                        <span class="text-success">•</span>
+                        <span class="fw-semibold text-dark">Transparência</span>
+                    </div>
+                    <p class="text-secondary mb-4 fw-bold">
+                        Sua conta digital completa, sem complicação e sem tarifas. 
+                        Abra sua conta em minutos e aproveite todos os benefícios!
+                    </p>
+                    <button class="btn btn-success btn-lg px-4">
+                        Começar Agora
+                    </button>
+                </div>
+                
+                <!-- Imagem -->
+                <div class="col-md-6 text-center">
+                    <img src="Assets/Images/logo-trivus.svg" class="img-fluid" alt="Logo Trivus Bank" style="max-width: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Por que escolher o Trivus Bank?</h2>
+            <div class="row g-4">
+                
+                <!-- Benefício 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="fs-1 text-success mb-3">💳</div>
+                            <h5 class="card-title fw-bold">Cartão sem Anuidade</h5>
+                            <p class="card-text text-secondary fw-semibold">
+                                Cartão de crédito internacional sem taxas e com cashback.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="fs-1 text-success mb-3">📱</div>
+                            <h5 class="card-title fw-bold">App Completo</h5>
+                            <p class="card-text text-secondary fw-semibold">
+                                Gerencie suas finanças de forma simples pelo celular.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefício 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="fs-1 text-success mb-3">🔒</div>
+                            <h5 class="card-title fw-bold">Segurança Total</h5>
+                            <p class="card-text text-secondary fw-semibold">
+                                Seus dados protegidos com a melhor tecnologia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0 fw-semibold">&copy; 2025 Trivus Bank - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript: Faz os dropdowns, modals e outros componentes funcionarem -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Meu JavaScript: Script para Dark Mode -->
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

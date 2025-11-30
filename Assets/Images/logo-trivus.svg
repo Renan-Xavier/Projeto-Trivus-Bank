@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Fundo transparente -->
+  
+  <!-- Triângulo externo maior -->
+  <polygon points="100,30 170,150 30,150" 
+           fill="none" 
+           stroke="#00cf87" 
+           stroke-width="2"/>
+  
+  <!-- Triângulo médio -->
+  <polygon points="100,50 155,135 45,135" 
+           fill="none" 
+           stroke="#00cf87" 
+           stroke-width="2"/>
+  
+  <!-- Triângulo interno menor -->
+  <polygon points="100,70 140,120 60,120" 
+           fill="none" 
+           stroke="#00cf87" 
+           stroke-width="2"/>
+  
+  <!-- Linha horizontal inferior -->
+  <line x1="30" y1="165" x2="170" y2="165" 
+        stroke="#00cf87" 
+        stroke-width="2"/>
+  
+  <!-- Linha horizontal inferior menor -->
+  <line x1="50" y1="175" x2="150" y2="175" 
+        stroke="#00cf87" 
+        stroke-width="2"/>
+</svg>
