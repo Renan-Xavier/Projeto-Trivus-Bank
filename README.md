@@ -10,14 +10,6 @@ Site institucional do Trivus Bank, um banco digital focado em simplicidade e seg
 - Cards com os principais benefícios
 - Design inspirado no Nubank
 
-## Como rodar
-
-1. Clone o repositório
-2. Abra o arquivo `index.html` no navegador
-3. Pronto!
-
-Não precisa instalar nada, funciona direto no navegador.
-
 ## Tecnologias
 
 - HTML5

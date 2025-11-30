@@ -8,7 +8,7 @@
     <!-- CSS do BS (botões, navbar, grid) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Meu CSS: Arquivo com estilos personalizados -->
+    <!-- CSS físico  -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
                 Trivus Bank
             </a>
             
-            <!-- Botão para Mobile -->
+            <!-- Botão sanduiche para Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,7 +55,7 @@
                         </ul>
                     </li>
                     
-                    <!-- Link simples -->
+                    <!-- Caminhos dos menus -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre</a>
                     </li>
@@ -67,10 +67,10 @@
                 
                 <!-- Botões de Ação -->
                 <div class="d-flex gap-2 align-items-center">
-                    <!-- Botão Dark Mode -->
-                    <button id="btnDark" class="btn btn-outline-secondary">🌙</button>
+                    <!-- Botão do modo escuro -->
+                    <button id="btnDark" class="btn btn-outline-success">🌙</button>
                     <a href="#" class="btn btn-outline-success">Entrar</a>
-                    <a href="#" class="btn btn-success">Abrir Conta</a>
+                    <a href="#" class="btn btn-success" style="font-size: 1.2rem;">Abrir Conta</a>
                 </div>
             </div>
         </div>
@@ -116,51 +116,126 @@
         </div>
     </section>
 
-    <!-- Seção de Benefícios -->
+    <!-- Carrossel de Diferenciais -->
     <section class="py-5">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Por que escolher o Trivus Bank?</h2>
-            <div class="row g-4">
+            <h2 class="text-center fw-bold mb-5">O que torna o Trivus Bank único?</h2>
+            
+            <!-- Carrossel -->
+            <div id="carouselDiferenciais" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
                 
-                <!-- Benefício 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
-                        <div class="card-body">
-                            <div class="fs-1 text-success mb-3">💳</div>
-                            <h5 class="card-title fw-bold">Cartão sem Anuidade</h5>
-                            <p class="card-text text-secondary fw-semibold">
-                                Cartão de crédito internacional sem taxas e com cashback.
-                            </p>
-                        </div>
-                    </div>
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselDiferenciais" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselDiferenciais" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselDiferenciais" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselDiferenciais" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselDiferenciais" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselDiferenciais" data-bs-slide-to="5"></button>
                 </div>
                 
-                <!-- Benefício 2 -->
-                <div class="col-md-4">
-                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
-                        <div class="card-body">
-                            <div class="fs-1 text-success mb-3">📱</div>
-                            <h5 class="card-title fw-bold">App Completo</h5>
-                            <p class="card-text text-secondary fw-semibold">
-                                Gerencie suas finanças de forma simples pelo celular.
-                            </p>
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    
+                    <!-- Slide 1: Tutoriais -->
+                    <div class="carousel-item active">
+                        <div class="card border-0 shadow-sm position-relative overflow-hidden" style="height: 500px;">
+                            <img src="Assets/Images/uma_pessoa_respondendo_questionario_do_perfil.png" class="w-100 h-100" alt="Pessoa respondendo questionário" style="object-fit: cover;">
+                            <div class="position-absolute bottom-0 w-100 p-4" style="background: rgba(0, 86, 63, 0.95);">
+                                <h3 class="fw-bold mb-3 text-white">Tutoriais para Todos os Níveis</h3>
+                                <p class="text-white fw-semibold mb-0">
+                                    Aprenda no seu ritmo! Oferecemos tutoriais interativos desde o básico 
+                                    (como fazer seu primeiro Pix) até o avançado (estratégias de investimento). 
+                                    Cada tutorial é adaptado ao seu nível de conhecimento digital.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Benefício 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
-                        <div class="card-body">
-                            <div class="fs-1 text-success mb-3">🔒</div>
-                            <h5 class="card-title fw-bold">Segurança Total</h5>
-                            <p class="card-text text-secondary fw-semibold">
-                                Seus dados protegidos com a melhor tecnologia.
-                            </p>
+                    
+                    <!-- Slide 2: Insatisfação -->
+                    <div class="carousel-item">
+                        <div class="card border-0 shadow-sm position-relative overflow-hidden" style="height: 500px;">
+                            <img src="Assets/Images/idoso_chateado_com_app_do_banco.png" class="w-100 h-100" alt="Idoso chateado com app" style="object-fit: cover;">
+                            <div class="position-absolute bottom-0 w-100 p-4" style="background: rgba(0, 86, 63, 0.95);">
+                                <h3 class="fw-bold mb-3 text-white">A Frustração</h3>
+                                <p class="text-white fw-semibold mb-0">
+                                    Bancos digitais existentes focam apenas em oferecer serviços, mas esquecem 
+                                    de ensinar. Isso deixa muitos usuários perdidos e inseguros ao realizar 
+                                    operações financeiras simples.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- Slide 3: Nossa Solução -->
+                    <div class="carousel-item">
+                        <div class="card border-0 shadow-sm position-relative overflow-hidden" style="height: 500px;">
+                            <img src="Assets/Images/uma pessoa tendo uma ideia.png" class="w-100 h-100" alt="Pessoa tendo uma ideia" style="object-fit: cover;">
+                            <div class="position-absolute bottom-0 w-100 p-4" style="background: rgba(0, 86, 63, 0.95);">
+                                <h3 class="fw-bold mb-3 text-white">Nossa Solução</h3>
+                                <p class="text-white fw-semibold mb-0">
+                                    O Trivus Bank é um banco digital inclusivo e educativo. Além de todos os 
+                                    serviços financeiros, oferecemos tutoriais interativos e uma experiência 
+                                    pensada para quem está começando no mundo digital.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4: O que oferecemos -->
+                    <div class="carousel-item">
+                        <div class="card border-0 shadow-sm position-relative overflow-hidden" style="height: 500px;">
+                            <img src="Assets/Images/homem segurando cel com app trivus bank.png" class="w-100 h-100" alt="Homem usando app Trivus Bank" style="object-fit: cover;">
+                            <div class="position-absolute bottom-0 w-100 p-4" style="background: rgba(0, 86, 63, 0.95);">
+                                <h3 class="fw-bold mb-3 text-white">O que Oferecemos</h3>
+                                <p class="text-white fw-semibold mb-0">
+                                    Tutoriais passo a passo, simuladores de Pix e transferências, investimentos 
+                                    explicados de forma simples (com rendimento de 200% do CDI) e uma plataforma 
+                                    educacional prática sobre finanças.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5: Educação Financeira -->
+                    <div class="carousel-item">
+                        <div class="card border-0 shadow-sm position-relative overflow-hidden" style="height: 500px;">
+                            <img src="Assets/Images/pessoa_usando_app_home.png" class="w-100 h-100" alt="Pessoa usando app" style="object-fit: cover; object-position: center 30%;">
+                            <div class="position-absolute bottom-0 w-100 p-4" style="background: rgba(0, 86, 63, 0.95);">
+                                <h3 class="fw-bold mb-3 text-white">Educação em Primeiro Lugar</h3>
+                                <p class="text-white fw-semibold mb-0">
+                                    Não basta ter os serviços, é preciso saber usá-los! No Trivus Bank, cada 
+                                    operação vem com explicações claras e dicas práticas. Aprender finanças 
+                                    nunca foi tão simples e acessível.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 6: Nosso Diferencial -->
+                    <div class="carousel-item">
+                        <div class="card border-0 shadow-sm position-relative overflow-hidden" style="height: 500px;">
+                            <img src="Assets/Images/ia_auxiliando_pessoas_no_banco.png" class="w-100 h-100" alt="IA auxiliando pessoas" style="object-fit: cover;">
+                            <div class="position-absolute bottom-0 w-100 p-4" style="background: rgba(0, 86, 63, 0.95);">
+                                <h3 class="fw-bold mb-3 text-white">Nosso Diferencial</h3>
+                                <p class="text-white fw-semibold mb-0">
+                                    Plataforma personalizada com interfaces adaptáveis, IA de investimento com 
+                                    proteção automática contra perdas, recomendações híbridas (IA + humanos) e 
+                                    foco educacional contínuo para você investir com segurança.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDiferenciais" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-success rounded-circle p-3"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDiferenciais" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-success rounded-circle p-3"></span>
+                </button>
             </div>
         </div>
     </section>
