@@ -1,45 +1,77 @@
 # Trivus Bank
 
-Site institucional do Trivus Bank, um banco digital focado em simplicidade e segurança.
+Landing page do Trivus Bank - banco digital educativo que ensina enquanto você usa.
 
-## O que tem aqui
+## Sobre o projeto
 
-- Página inicial com apresentação do banco
-- Menu de navegação responsivo
-- Modo escuro
-- Cards com os principais benefícios
-- Design inspirado no Nubank
+Criei esse site como parte do trabalho da faculdade (FIAP). A ideia do Trivus Bank é ser um banco diferente, que não só oferece serviços financeiros mas também ensina as pessoas a usarem. Pensei principalmente nos idosos e quem tem dificuldade com apps de banco.
 
-## Tecnologias
+O nome vem de "três virtudes": Segurança, Simplicidade e Transparência.
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript
+## Stack
 
-## Estrutura dos arquivos
+Usei tecnologias básicas mesmo, mantendo simples:
+
+- HTML5 e CSS3
+- Bootstrap 5.3 (via CDN)
+- JavaScript pra dark mode
+- Um vídeo de background com triângulos animados
+
+## Como ficou organizado
 
 ```
-├── index.html          # Página principal
-├── style.css           # Estilos customizados
-└── Assets/
-    ├── Images/         # Logo e imagens
-    ├── js/             # Scripts (modo escuro)
-    └── video/          # Vídeo de background
+projeto/
+├── index.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   └── script.js
+    ├── images/
+    │   ├── logo-trivus.svg
+    │   └── (outras imagens do carousel)
+    ├── videos/
+    │   └── video triagulos bg.mp4
+    └── pages/
 ```
 
-## Funcionalidades
+## O que tem no site
 
-- **Navbar responsiva**: Menu que vira sanduíche no celular
-- **Modo escuro**: Botão para alternar entre tema claro e escuro
-- **Dropdowns**: Menus com animação suave
-- **Vídeo background**: Animação de triângulos na seção principal
+### Navegação
+Menu com dropdown que funciona tanto hover quanto click. No mobile vira aquele menu sanduíche. Botei uns efeitos de transição suaves.
 
-## Cores do projeto
+### Carousel
+Fiz um carousel com 6 slides mostrando:
+- O problema (idosos perdidos com apps)
+- Nossa solução (banco educativo)
+- O que oferecemos
+- Tutoriais e educação financeira
+- Nosso diferencial com IA
 
-- Verde escuro: `#00563F`
-- Verde claro: `#00cf87`
+Configurei pra trocar automaticamente a cada 7 segundos.
+
+### Dark Mode
+Botão com emoji de lua/sol que troca o tema. É só JavaScript puro mesmo, usando classList.toggle. Ficou bem legal.
+
+### Responsividade
+Testei no celular e ficou legal. O texto do carousel diminui automaticamente pra não cobrir a imagem toda no mobile.
+
+## Esquema de cores
+
+Escolhi um verde escuro como cor principal:
+- `#00563F` - verde principal para seguir a ideia do protótipo igual na fase anterior
+- `#00cf87` - verde mais claro pros destaques
+- `#003d2d` - verde mais escuro no hover
+
+## Alguns detalhes técnicos
+
+- Fontes aumentadas em 50% do padrão (ficou mais fácil de ler)
+- Border radius de 50px nos botões
+- Transição de 0.6s nos dropdowns
+- Cards com hover effect (sobem um pouco)
+- Overlay verde transparente no carousel (rgba com 0.95 de opacidade)
 
 ---
 
-Desenvolvido como projeto acadêmico para a FIAP
+Projeto acadêmico - FIAP 2025
