@@ -23,12 +23,12 @@ Usei tecnologias básicas mesmo, mantendo simples:
 projeto/
 ├── index.html
 ├── README.md
-└── assets/
+└── Assets/
     ├── css/
     │   └── style.css
     ├── js/
     │   └── script.js
-    ├── images/
+    ├── Images/
     │   ├── logo-trivus.svg
     │   └── (outras imagens do carousel)
     ├── videos/
