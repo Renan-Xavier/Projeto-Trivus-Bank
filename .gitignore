@@ -1,0 +1,9 @@
+**/node_modules/
+**/target/
+**/out/
+**/.idea/
+**/*.iml
+**/*.zip
+**/README.tmp.md
+.DS_Store
+*.log
